@@ -20,11 +20,6 @@ function getInitialTheme() {
   if (stored === 'light' || stored === 'neutral' || stored === 'night') {
     return stored;
   }
-
-  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    return 'night';
-  }
-
   return 'light';
 }
 
