@@ -1,52 +1,133 @@
-// Toggle contacts
-const contacts = document.getElementById("contacts");
-const toggleContactsBtn = document.getElementById("toggle-contacts");
+// ===============================
+// THEME LOGIC
+// ===============================
 
-if (contacts && toggleContactsBtn) {
-  toggleContactsBtn.addEventListener("click", () => {
-    contacts.classList.toggle("contacts--open");
-    const isOpen = contacts.classList.contains("contacts--open");
-    toggleContactsBtn.textContent = isOpen ? "Hide contacts" : "Show contacts";
+function applyTheme(theme) {
+  const root = document.documentElement;
+  const buttons = document.querySelectorAll('[data-theme-target]');
+
+  root.setAttribute('data-theme', theme);
+  localStorage.setItem('theme-preference', theme);
+
+  buttons.forEach((btn) => {
+    const target = btn.getAttribute('data-theme-target');
+    btn.classList.toggle('theme-btn--active', target === theme);
   });
 }
 
-// Smooth scroll & active nav link
-const navLinks = document.querySelectorAll(".nav__link");
+function getInitialTheme() {
+  const stored = localStorage.getItem('theme-preference');
+  if (stored === 'light' || stored === 'neutral' || stored === 'night') {
+    return stored;
+  }
 
-navLinks.forEach((link) => {
-  link.addEventListener("click", (e) => {
-    e.preventDefault();
-    const targetId = link.getAttribute("href").slice(1);
-    const target = document.getElementById(targetId);
-    if (!target) return;
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    return 'night';
+  }
 
-    target.scrollIntoView({ behavior: "smooth", block: "start" });
+  return 'light';
+}
 
-    navLinks.forEach((l) => l.classList.remove("nav__link--active"));
-    link.classList.add("nav__link--active");
-  });
-});
+function setupThemeSwitcher() {
+  const nav = document.querySelector('.nav');
+  if (!nav) return;
 
-// Portfolio filters
-const filterButtons = document.querySelectorAll(".filter-btn");
-const projects = document.querySelectorAll(".project-card");
+  // Inject theme switcher buttons
+  const switcher = document.createElement('div');
+  switcher.className = 'theme-switcher';
+  switcher.innerHTML = `
+    <button type="button" class="theme-btn" data-theme-target="light">Clair</button>
+    <button type="button" class="theme-btn" data-theme-target="neutral">Neutre</button>
+    <button type="button" class="theme-btn" data-theme-target="night">Nuit</button>
+  `;
+  nav.after(switcher);
 
-filterButtons.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    const category = btn.dataset.filter;
+  const initialTheme = getInitialTheme();
+  applyTheme(initialTheme);
 
-    filterButtons.forEach((b) => b.classList.remove("filter-btn--active"));
-    btn.classList.add("filter-btn--active");
-
-    projects.forEach((project) => {
-      const projectCategory = project.dataset.category;
-      if (category === "all" || category === projectCategory) {
-        project.style.display = "flex";
-      } else {
-        project.style.display = "none";
-      }
+  const buttons = switcher.querySelectorAll('[data-theme-target]');
+  buttons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const theme = btn.getAttribute('data-theme-target');
+      applyTheme(theme);
     });
   });
-});
+}
 
-// Optional: mobile toggling of nav (here we simply scroll, so no extra logic yet)
+// ===============================
+// NAV & SCROLL
+// ===============================
+
+function setupNavScroll() {
+  const navLinks = document.querySelectorAll('.nav__link');
+
+  navLinks.forEach((link) => {
+    link.addEventListener('click', (e) => {
+      const href = link.getAttribute('href');
+      if (!href || !href.startsWith('#')) return;
+
+      const target = document.querySelector(href);
+      if (!target) return;
+
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+      navLinks.forEach((l) => l.classList.remove('nav__link--active'));
+      link.classList.add('nav__link--active');
+    });
+  });
+}
+
+// ===============================
+// PORTFOLIO FILTERS
+// ===============================
+
+function setupPortfolioFilters() {
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const projects = document.querySelectorAll('.project-card');
+
+  if (!filterButtons.length || !projects.length) return;
+
+  filterButtons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const category = btn.getAttribute('data-filter') || 'all';
+
+      filterButtons.forEach((b) => b.classList.remove('filter-btn--active'));
+      btn.classList.add('filter-btn--active');
+
+      projects.forEach((project) => {
+        const projectCategory = project.dataset.category || 'all';
+        if (category === 'all' || category === projectCategory) {
+          project.style.display = 'flex';
+        } else {
+          project.style.display = 'none';
+        }
+      });
+    });
+  });
+}
+
+// ===============================
+// MOBILE SIDEBAR TOGGLE (OPTIONNEL)
+// ===============================
+
+function setupMobileMenu() {
+  const toggleBtn = document.getElementById('sidebarMenuToggle');
+  const sidebar = document.querySelector('.sidebar');
+  if (!toggleBtn || !sidebar) return;
+
+  toggleBtn.addEventListener('click', () => {
+    sidebar.classList.toggle('sidebar--open');
+  });
+}
+
+// ===============================
+// INIT
+// ===============================
+
+document.addEventListener('DOMContentLoaded', () => {
+  setupThemeSwitcher();
+  setupNavScroll();
+  setupPortfolioFilters();
+  setupMobileMenu();
+});
