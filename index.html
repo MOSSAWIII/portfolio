@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name - Portfolio</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <!-- Sidebar / vCard -->
+    <aside class="sidebar">
+      <div class="profile">
+        <div class="profile__avatar">
+          <!-- Replace avatar.jpg with your photo in /assets -->
+          <img src="assets/avatar.jpg" alt="Your Name" />
+        </div>
+        <h1 class="profile__firstname">Your</h1>
+        <h2 class="profile__lastname">NAME</h2>
+        <p class="profile__role">Data Scientist & Cloud Engineer</p>
+
+        <button class="btn btn--primary" id="toggle-contacts">
+          Show contacts
+        </button>
+
+        <div class="contacts" id="contacts">
+          <div class="contact-item">
+            <span class="contact-item__label">Email</span>
+            <a href="mailto:you@example.com" class="contact-item__value">
+              you@example.com
+            </a>
+          </div>
+
+          <div class="contact-item">
+            <span class="contact-item__label">Phone</span>
+            <a href="tel:+33000000000" class="contact-item__value">
+              (+33) 0 00 00 00 00
+            </a>
+          </div>
+
+          <div class="contact-item">
+            <span class="contact-item__label">Location</span>
+            <span class="contact-item__value">Amsterdam, Netherlands</span>
+          </div>
+
+          <div class="contact-item">
+            <span class="contact-item__label">LinkedIn</span>
+            <a
+              href="https://www.linkedin.com/in/your-profile"
+              target="_blank"
+              rel="noopener"
+              class="contact-item__value"
+            >
+              linkedin.com/in/your-profile
+            </a>
+          </div>
+
+          <div class="contact-item">
+            <span class="contact-item__label">GitHub</span>
+            <a
+              href="https://github.com/your-username"
+              target="_blank"
+              rel="noopener"
+              class="contact-item__value"
+            >
+              github.com/your-username
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#about" class="nav__link nav__link--active">About</a>
+        <a href="#resume" class="nav__link">Resume</a>
+        <a href="#portfolio" class="nav__link">Portfolio</a>
+        <a href="#certifications" class="nav__link">Certifications</a>
+        <a href="#contact" class="nav__link">Contact</a>
+      </nav>
+
+      <button
+        class="sidebar__menu-toggle"
+        id="sidebarMenuToggle"
+        aria-label="Toggle navigation"
+      >
+        ☰
+      </button>
+    </aside>
+
+    <!-- Main content -->
+    <main class="content">
+      <!-- About -->
+      <section id="about" class="section">
+        <h2 class="section__title">About me</h2>
+        <p>
+          I am a data scientist and cloud engineer passionate about turning data
+          into useful products. I love building scalable data pipelines,
+          recommendation systems, and AI-powered tools that solve real problems.
+        </p>
+        <p>
+          I enjoy working in teams where we mix creativity with solid
+          engineering, and I’m always exploring new technologies in data,
+          machine learning, and cloud.
+        </p>
+
+        <h3 class="section__subtitle">What I'm doing</h3>
+        <div class="cards-grid">
+          <article class="card">
+            <h4 class="card__title">Machine & Deep Learning</h4>
+            <p class="card__text">
+              Building predictive models and intelligent systems to tackle
+              complex business problems.
+            </p>
+          </article>
+
+          <article class="card">
+            <h4 class="card__title">Data Engineering & Cloud</h4>
+            <p class="card__text">
+              Designing and deploying scalable data pipelines and ML workflows
+              on the cloud.
+            </p>
+          </article>
+
+          <article class="card">
+            <h4 class="card__title">AI & Generative AI</h4>
+            <p class="card__text">
+              Using LLMs and RAG to build assistants, automation tools, and
+              smart applications.
+            </p>
+          </article>
+
+          <article class="card">
+            <h4 class="card__title">Analytics & Dashboards</h4>
+            <p class="card__text">
+              Exploring data, building dashboards, and communicating insights to
+              non-technical stakeholders.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Resume -->
+      <section id="resume" class="section">
+        <h2 class="section__title">Resume</h2>
+
+        <div class="two-columns">
+          <div>
+            <h3 class="section__subtitle">Education</h3>
+
+            <div class="timeline-item">
+              <h4 class="timeline-item__title">
+                Master in Data Science / Computer Science
+              </h4>
+              <span class="timeline-item__meta">
+                2024 — 2026 | Some University, City, Country
+              </span>
+              <p class="timeline-item__text">
+                Short description of your master: focus, topics, and what you
+                worked on.
+              </p>
+            </div>
+
+            <div class="timeline-item">
+              <h4 class="timeline-item__title">
+                Engineering Degree / Bachelor in Data Science
+              </h4>
+              <span class="timeline-item__meta">
+                2021 — 2024 | Another School, City, Country
+              </span>
+              <p class="timeline-item__text">
+                Short description of your program and main courses / projects.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="section__subtitle">Experience</h3>
+
+            <div class="timeline-item">
+              <h4 class="timeline-item__title">
+                Data Science & Cloud Intern – Company A
+              </h4>
+              <span class="timeline-item__meta">
+                Feb 2025 — Aug 2025 | City, Country
+              </span>
+              <p class="timeline-item__text">
+                Built ML / GenAI-based features, automated workflows, and
+                deployed services on the cloud.
+              </p>
+            </div>
+
+            <div class="timeline-item">
+              <h4 class="timeline-item__title">
+                Data Science Intern – Company B
+              </h4>
+              <span class="timeline-item__meta">
+                Jul 2024 — Sept 2024 | City, Country
+              </span>
+              <p class="timeline-item__text">
+                Worked on NLP, audio / text pipelines, or analytics (customize
+                this with your real experience).
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="section__subtitle">Skills</h3>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h4>Languages</h4>
+            <p>Python · SQL · Scala · JavaScript</p>
+          </div>
+          <div class="skill-group">
+            <h4>ML / DL</h4>
+            <p>scikit-learn · TensorFlow · PyTorch · MLflow</p>
+          </div>
+          <div class="skill-group">
+            <h4>Cloud & Data</h4>
+            <p>Docker · Kubernetes · Azure · PostgreSQL · Kafka</p>
+          </div>
+          <div class="skill-group">
+            <h4>GenAI & NLP</h4>
+            <p>LLMs · LangChain · RAG · Hugging Face</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio -->
+      <section id="portfolio" class="section">
+        <h2 class="section__title">Portfolio</h2>
+
+        <div class="portfolio-filters">
+          <button class="filter-btn filter-btn--active" data-filter="all">
+            All
+          </button>
+          <button class="filter-btn" data-filter="ml">Machine Learning</button>
+          <button class="filter-btn" data-filter="dl">Deep Learning</button>
+          <button class="filter-btn" data-filter="nlp">NLP</button>
+          <button class="filter-btn" data-filter="genai">AI & GenAI</button>
+        </div>
+
+        <div class="portfolio-grid">
+          <article class="project-card" data-category="dl">
+            <h3 class="project-card__title">
+              Gold Price Prediction with LSTM
+            </h3>
+            <p class="project-card__tag">Deep Learning</p>
+            <p class="project-card__text">
+              Time series forecasting using LSTM networks to predict future gold
+              prices.
+            </p>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener"
+              class="project-card__link"
+            >
+              View project
+            </a>
+          </article>
+
+          <article class="project-card" data-category="ml">
+            <h3 class="project-card__title">
+              Customer Churn Prediction with Gradient Boosting
+            </h3>
+            <p class="project-card__tag">Machine Learning</p>
+            <p class="project-card__text">
+              Built a churn prediction model and deployed it as an API to help
+              prioritize retention actions.
+            </p>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener"
+              class="project-card__link"
+            >
+              View project
+            </a>
+          </article>
+
+          <article class="project-card" data-category="nlp">
+            <h3 class="project-card__title">
+              Sentiment Analysis on Reviews with RNN
+            </h3>
+            <p class="project-card__tag">NLP</p>
+            <p class="project-card__text">
+              NLP pipeline for classifying movie or product reviews into
+              positive/negative sentiment.
+            </p>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener"
+              class="project-card__link"
+            >
+              View project
+            </a>
+          </article>
+
+          <article class="project-card" data-category="genai">
+            <h3 class="project-card__title">
+              Recruitment Assistant with Generative AI
+            </h3>
+            <p class="project-card__tag">AI & GenAI</p>
+            <p class="project-card__text">
+              RAG-powered assistant that helps HR teams screen candidates and
+              generate job descriptions.
+            </p>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener"
+              class="project-card__link"
+            >
+              View project
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <!-- Certifications -->
+      <section id="certifications" class="section">
+        <h2 class="section__title">Certifications</h2>
+        <ul class="list">
+          <li class="list__item">
+            <strong>2024 · Generative AI Fundamentals</strong> – Short
+            description of what you learned.
+          </li>
+          <li class="list__item">
+            <strong>2024 · Cloud Certification (Azure / GCP / OCI)</strong> –
+            Focus on data & AI services.
+          </li>
+          <li class="list__item">
+            <strong>2023 · Data Science Specialization</strong> – End-to-end
+            projects and ML workflows.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section">
+        <h2 class="section__title">Contact</h2>
+        <p>
+          Interested in working together, or just want to say hi? Feel free to
+          reach out using the form below.
+        </p>
+
+        <form
+          class="contact-form"
+          action="https://formspree.io/f/your-form-id"
+          method="POST"
+        >
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                required
+                placeholder="Your name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                placeholder="you@example.com"
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              required
+              placeholder="Write your message here..."
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary">
+            Send Message
+          </button>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
