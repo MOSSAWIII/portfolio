@@ -44,7 +44,9 @@ body {
 }
 
 .sidebar {
-  position: relative;
+  position: sticky;
+  top: 24px;              /* distance par rapport au haut de l’écran */
+  align-self: flex-start; /* évite que la sidebar prenne toute la hauteur */
   background: linear-gradient(145deg, #020617, #020617);
   border-radius: var(--radius-xl);
   padding: 20px 20px 24px;
@@ -53,6 +55,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  z-index: 10;            /* pour passer par-dessus le contenu au besoin */
 }
 
 .content {
