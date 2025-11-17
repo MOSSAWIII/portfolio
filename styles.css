@@ -96,7 +96,7 @@ body {
   padding: 16px;
   display: grid;
   grid-template-columns: 320px minmax(0, 1fr);
-  gap: 24px;
+  gap: 32px;
 }
 
 /* Sidebar sticky on desktop */
@@ -605,10 +605,9 @@ textarea:focus {
    RESPONSIVE
 ================================== */
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .page {
     grid-template-columns: 1fr;
-    margin: 16px auto;
   }
 
   .sidebar {
