@@ -1,448 +1,384 @@
 <!DOCTYPE html>
-<html lang="fr" data-theme="night">
+<html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Amine EL MOUSSAOUI – Candidat en alternance Ressources Humaines</title>
-
-  <meta name="description"
-        content="Portfolio d’Amine EL MOUSSAOUI, ingénieur de formation en transition vers les Ressources Humaines, à la recherche d’une alternance RH à partir de janvier 2026." />
-
-  <!-- Open Graph pour un joli aperçu sur LinkedIn -->
-  <meta property="og:title" content="Amine EL MOUSSAOUI – Alternance Ressources Humaines" />
-  <meta property="og:description"
-        content="Ingénieur en spécialisation RH – indicateurs sociaux, projets RH, people analytics." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://mossawiii.github.io/portfolio/" />
-
-  <!-- Google Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet"
+  <title>Amine EL MOUSSAOUI – Alternant en Ressources Humaines</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Portfolio d'Amine EL MOUSSAOUI, alternant en Ressources Humaines à partir de janvier 2026, avec une double compétence RH & Data."
   />
-
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="page">
-    <!-- Sidebar / vCard -->
-    <aside class="sidebar">
-      <div class="profile">
-        <div class="profile__avatar">
-          <!-- Remplace assets/avatar.jpg par ta vraie photo -->
-          <img src="assets/amine-el-moussaoui.jpg" alt="Photo de Amine EL MOUSSAOUI" />
-        </div>
-        <h1 class="profile__firstname">Amine</h1>
-        <h2 class="profile__lastname">EL MOUSSAOUI</h2>
-        <p class="profile__role">Candidat en alternance – Ressources Humaines</p>
-
-        <button class="btn btn--primary" id="toggle-contacts">
-          Afficher les contacts
-        </button>
-
-        <div class="contacts" id="contacts">
-          <div class="contact-item">
-            <span class="contact-item__label">Email</span>
-            <!-- Mets ici ton vrai email -->
-            <a href="mailto:maelmoussaoui1@gmail.com" class="contact-item__value">
-              maelmoussaoui1@gmail.com
-            </a>
-          </div>
-
-          <div class="contact-item">
-            <span class="contact-item__label">Téléphone</span>
-            <!-- Mets ici ton vrai numéro -->
-            <span class="contact-item__value">+33 9 73 03 81 50</span>
-          </div>
-
-          <div class="contact-item">
-            <span class="contact-item__label">Localisation</span>
-            <span class="contact-item__value">
-              Paris, France – mobilité France entière & Outre-Mer
-            </span>
-          </div>
-        </div>
+  <header class="site-header" id="top">
+    <nav class="navbar">
+      <div class="navbar__brand">
+        <a href="#top">Amine<span>EL MOUSSAOUI</span></a>
       </div>
-
-      <!-- Navigation -->
-      <nav class="nav">
-        <a href="#about" class="nav__link nav__link--active">À propos</a>
-        <a href="#resume" class="nav__link">Parcours</a>
-        <a href="#portfolio" class="nav__link">Projets</a>
-        <a href="#engagements" class="nav__link">Engagements</a>
-        <a href="#contact" class="nav__link">Contact</a>
-      </nav>
-
-      <!-- Sélecteur de thème -->
-      <div class="theme-switcher" aria-label="Changer de thème">
-        <button type="button" class="theme-btn" data-theme-target="light">
-          Clair
-        </button>
-        <button type="button" class="theme-btn" data-theme-target="neutral">
-          Neutre
-        </button>
-        <button type="button" class="theme-btn" data-theme-target="night">
-          Nuit
-        </button>
-      </div>
-
-      <button
-        class="sidebar__menu-toggle"
-        id="sidebarMenuToggle"
-        aria-label="Basculer la navigation"
-      >
-        ☰
+      <button class="navbar__toggle" aria-label="Menu" id="menuToggle">
+        <span></span><span></span><span></span>
       </button>
-    </aside>
+      <ul class="navbar__links" id="navLinks">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#experiences">Expériences</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#formations">Formations</a></li>
+        <li><a href="#projets">Projets RH & Data</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-    <!-- Main content -->
-    <main class="content">
-      <!-- About -->
-      <section id="about" class="section">
-        <h2 class="section__title">À propos de moi</h2>
-        <p>
-          Ingénieur de formation, je me spécialise aujourd’hui dans les
-          Ressources Humaines. Je souhaite mettre mes compétences en analyse de
-          données, en gestion de projet et en communication au service des
-          équipes RH : pilotage d’indicateurs sociaux, accompagnement des
-          managers, amélioration des processus et support aux projets de
-          transformation.
+    <section class="hero" id="accueil">
+      <div class="hero__content">
+        <p class="hero__tag">Alternant en Ressources Humaines – Janvier 2026</p>
+        <h1>Construire des RH plus efficaces, guidées par la donnée.</h1>
+        <p class="hero__subtitle">
+          Ingénieur de formation en transition vers les Ressources Humaines, avec
+          1 an et demi d’expérience comme Gestionnaire RH en PME et un parcours
+          solide en analyse de données. Je souhaite accompagner un service RH
+          (généraliste ou spécialisé) sur ses enjeux quotidiens et ses projets
+          structurants.
         </p>
-        <p>
-          Je recherche une alternance en Ressources Humaines (12 à 24 mois, 4 jours en entreprise / 1 jour à l’école) à partir de janvier 2026, au sein d’une Direction des Ressources Humaines, d’une équipe HRBP, Talent Acquisition ou People Analytics.
-        </p>
-
-        <h3 class="section__subtitle">Ce que je fais / peux apporter</h3>
-        <div class="cards-grid">
-          <article class="card">
-            <h4 class="card__title">Analyse & indicateurs RH</h4>
-            <p class="card__text">
-              Construction et suivi de KPI (absentéisme, mobilité, formation,
-              recrutement…), tableaux de bord simples et actionnables.
-            </p>
-          </article>
-
-          <article class="card">
-            <h4 class="card__title">Gestion de projet</h4>
-            <p class="card__text">
-              Planification, suivi d’actions, coordination des parties
-              prenantes, reporting clair pour les équipes RH et managers.
-            </p>
-          </article>
-
-          <article class="card">
-            <h4 class="card__title">People & Data Analytics</h4>
-            <p class="card__text">
-              Utilisation de mes compétences data (statistiques, SQL,
-              visualisation) pour éclairer les décisions RH et objectiver les
-              sujets sensibles.
-            </p>
-          </article>
-
-          <article class="card">
-            <h4 class="card__title">Communication & support managers</h4>
-            <p class="card__text">
-              Vulgarisation d’analyses, restitution pédagogique des résultats,
-              rédaction de supports (guides, comptes rendus, définitions de
-              KPI).
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <!-- Resume / Parcours -->
-      <section id="resume" class="section">
-        <h2 class="section__title">Parcours</h2>
-
-        <div class="two-columns">
-          <div>
-            <h3 class="section__subtitle">Formation</h3>
-
-            <div class="timeline-item">
-              <h4 class="timeline-item__title">
-                Mastère Manager des Ressources Humaines (RNCP niveau 7)
-              </h4>
-              <span class="timeline-item__meta">
-                2026 — 2027 (rentrée janvier 2026)
-              </span>
-              <p class="timeline-item__text">
-                Formation professionnalisante en management des RH : développement
-                RH, relations sociales, gestion administrative et juridique du
-                personnel, politique de rémunération, accompagnement du
-                changement.
-              </p>
-            </div>
-
-            <div class="timeline-item">
-              <h4 class="timeline-item__title">
-                Master 2 – Machine Learning for Data Science
-              </h4>
-              <span class="timeline-item__meta">
-                2024 — 2025 · Université Paris Cité
-              </span>
-              <p class="timeline-item__text">
-                Spécialisation en intelligence artificielle et analyse avancée
-                de données. Compétences transférables au pilotage d’indicateurs
-                et à l’analyse de données RH.
-              </p>
-            </div>
-
-            <div class="timeline-item">
-              <h4 class="timeline-item__title">
-                Diplôme d’ingénieur en Data Science
-              </h4>
-              <span class="timeline-item__meta">
-                2019 — 2024 · INSEA, Rabat
-              </span>
-              <p class="timeline-item__text">
-                Formation d’ingénieur statistique et data : rigueur analytique,
-                gestion de projet, travail avec des équipes métiers variées.
-              </p>
-            </div>
-          </div>
-
-          <div>
-            <h3 class="section__subtitle">Expériences</h3>
-
-            <div class="timeline-item">
-              <h4 class="timeline-item__title">
-                Consultant Data (Stage)
-              </h4>
-              <span class="timeline-item__meta">
-                Fév. 2025 — Août 2025 · OCTO Technology, Paris
-              </span>
-              <p class="timeline-item__text">
-                Suivi et amélioration d’indicateurs de performance pour un
-                système de recommandation temps réel, construction de tableaux
-                de bord pour les équipes produit et collaboration avec des
-                Product Owners. Méthodes réutilisables pour des indicateurs RH.
-              </p>
-            </div>
-
-            <div class="timeline-item">
-              <h4 class="timeline-item__title">
-                Ingénieur IA (Stage)
-              </h4>
-              <span class="timeline-item__meta">
-                Fév. 2024 — Oct. 2024 · FY Computing (Ziwig), Rabat
-              </span>
-              <p class="timeline-item__text">
-                Analyse de grands jeux de données cliniques, mise en place
-                d’indicateurs de qualité et de processus de contrôle dans un
-                environnement réglementé — approche transférable à la qualité
-                des données RH.
-              </p>
-            </div>
-
-            <div class="timeline-item">
-              <h4 class="timeline-item__title">
-                Stagiaire Data Scientist & Risque
-              </h4>
-              <span class="timeline-item__meta">
-                Juil. 2023 — Sept. 2023 · SOFAC, Casablanca
-              </span>
-              <p class="timeline-item__text">
-                Construction de tableaux de bord pour le risque et la fraude,
-                harmonisation d’indicateurs avec les équipes métiers, réduction
-                du temps de décision — compétences transférables au pilotage RH.
-              </p>
-            </div>
-          </div>
+        <div class="hero__meta">
+          <span>📍 Basé à Paris – mobilité France & Outre-Mer</span>
+          <span>📅 Disponible en alternance à partir de janvier 2026</span>
         </div>
 
-        <h3 class="section__subtitle">Compétences</h3>
-        <div class="skills-grid">
-          <div class="skill-group">
-            <h4>Ressources Humaines & organisation</h4>
+        <div class="hero__actions">
+          <a
+            href="CV_Amine_EL_MOUSSAOUI_RH_1page.pdf"
+            class="btn btn--primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Télécharger mon CV (PDF)
+          </a>
+          <a href="#contact" class="btn btn--secondary">
+            Me contacter
+          </a>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <!-- À PROPOS -->
+    <section class="section" id="apropos">
+      <div class="section__header">
+        <h2>À propos</h2>
+        <p>Une double compétence RH & Data au service des équipes.</p>
+      </div>
+      <div class="grid grid--two">
+        <div>
+          <p>
+            Après un diplôme d’Ingénieur en Data Science et plusieurs stages en
+            analyse de données, j’ai choisi d’orienter ma carrière vers les
+            <strong>Ressources Humaines</strong>. Mon ambition : devenir un
+            professionnel RH capable de gérer le quotidien (administration du
+            personnel, recrutement, formation, relations avec les managers)
+            tout en apportant une expertise analytique pour
+            <strong>piloter les indicateurs RH</strong> et améliorer les
+            processus.
+          </p>
+          <p>
+            J’ai travaillé <strong>1 an et demi comme Gestionnaire RH</strong>
+            en PME, en forte proximité avec les équipes et les managers.
+            Parallèlement, mes expériences en Data m’ont appris à manipuler
+            des jeux de données complexes, à construire des tableaux de bord et
+            à vulgariser des résultats pour des publics non techniques.
+          </p>
+          <p>
+            Aujourd’hui, je recherche une alternance en RH (4 jours en
+            entreprise / 1 jour à l’école) à partir de
+            <strong>janvier 2026</strong>, pour contribuer à des missions
+            variées : <strong>développement RH, GPEC, recrutement, formation,
+            QVT, people analytics</strong> ou gestion de projet RH.
+          </p>
+        </div>
+        <aside class="card card--highlight">
+          <h3>En bref</h3>
+          <ul class="list">
+            <li>🎯 Alternance RH – Janvier 2026</li>
+            <li>📊 Pilotage d’indicateurs & tableaux de bord RH</li>
+            <li>🤝 Support de proximité aux managers & équipes</li>
+            <li>🔐 Forte culture de la confidentialité & du réglementaire</li>
+            <li>🧠 Double compétence RH & Data Science</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- EXPÉRIENCES -->
+    <section class="section section--alt" id="experiences">
+      <div class="section__header">
+        <h2>Expériences professionnelles</h2>
+        <p>Des expériences RH et Data au service des enjeux humains.</p>
+      </div>
+
+      <div class="timeline">
+
+        <article class="timeline__item">
+          <div class="timeline__marker"></div>
+          <div class="timeline__content">
+            <h3>Gestionnaire des Ressources Humaines – COMORE Studio</h3>
+            <p class="timeline__meta">1 an et demi – PME</p>
+            <ul class="list">
+              <li>Gestion administrative du personnel : dossiers salariés, contrats, absences, entrées/sorties.</li>
+              <li>Participation au recrutement : offres, tri de CV, préqualifications, participation aux entretiens.</li>
+              <li>Suivi des temps de travail et des besoins en renfort en lien avec les managers.</li>
+              <li>Contribution à l’amélioration des process RH et de la communication interne.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline__item">
+          <div class="timeline__marker"></div>
+          <div class="timeline__content">
+            <h3>Consultant Data (Stage) – OCTO Technology (Groupe Accenture)</h3>
+            <p class="timeline__meta">Paris – Système de recommandation temps réel</p>
+            <ul class="list">
+              <li>Suivi et amélioration d’indicateurs de performance pour un système de recommandation.</li>
+              <li>Construction de tableaux de bord pour aider les équipes produit à comprendre le comportement utilisateur.</li>
+              <li>Collaboration avec les Product Owners pour prioriser les actions à forte valeur.</li>
+              <li class="tagged">
+                💡 Compétence transférable vers le pilotage d’indicateurs RH
+                (absentéisme, mobilité, recrutement, formation).
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline__item">
+          <div class="timeline__marker"></div>
+          <div class="timeline__content">
+            <h3>Ingénieur IA (Stage) – FY Computing (Ziwig)</h3>
+            <p class="timeline__meta">Rabat – Données cliniques</p>
+            <ul class="list">
+              <li>Analyse de grands jeux de données cliniques pour améliorer la qualité de l’information.</li>
+              <li>Mise en place de processus de contrôle qualité et de traçabilité des données.</li>
+              <li>Publication d’indicateurs de qualité et de performance pour les équipes métier.</li>
+              <li>Travail dans un environnement fortement réglementé, avec forte exigence de confidentialité.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline__item">
+          <div class="timeline__marker"></div>
+          <div class="timeline__content">
+            <h3>Data Scientist & Risque (Stage) – SOFAC Crédit & Leasing</h3>
+            <p class="timeline__meta">Casablanca – Risque & fraude</p>
+            <ul class="list">
+              <li>Construction de tableaux de bord interactifs risque/fraude, réduisant le temps de décision d’environ 40%.</li>
+              <li>Amélioration d’indicateurs de détection de fraude en lien avec les équipes métier.</li>
+              <li>Rédaction et mise à jour d’un glossaire de KPI pour harmoniser les définitions.</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- COMPÉTENCES -->
+    <section class="section" id="competences">
+      <div class="section__header">
+        <h2>Compétences</h2>
+        <p>À mi-chemin entre la fonction RH et l’analyse de données.</p>
+      </div>
+
+      <div class="grid grid--three">
+        <div class="card">
+          <h3>Ressources Humaines</h3>
+          <ul class="list">
+            <li>Administration du personnel</li>
+            <li>Recrutement & préqualification</li>
+            <li>Suivi du temps de travail & renforts</li>
+            <li>Support de proximité aux managers</li>
+            <li>Participation QVT & formation</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>People Analytics & Pilotage RH</h3>
+          <ul class="list">
+            <li>Suivi et analyse de KPI RH</li>
+            <li>Tableaux de bord (Excel, outils BI)</li>
+            <li>Statistiques descriptives & analyses ad-hoc</li>
+            <li>Data storytelling pour publics non techniques</li>
+            <li>Amélioration et standardisation des indicateurs</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Transversal & outils</h3>
+          <ul class="list">
+            <li>Gestion de projet (planification, coordination, reporting)</li>
+            <li>Travail avec équipes pluridisciplinaires</li>
+            <li>Communication claire & structurée</li>
+            <li>Confidentialité & sens du réglementaire</li>
+            <li>Outils RH : ATS, SIRH, gestion du temps</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tags">
+        <span class="tag">Français : C1</span>
+        <span class="tag">Anglais : C1</span>
+        <span class="tag">Espagnol : B1</span>
+        <span class="tag">Data / SQL / Tableaux de bord</span>
+      </div>
+    </section>
+
+    <!-- FORMATIONS -->
+    <section class="section section--alt" id="formations">
+      <div class="section__header">
+        <h2>Formations</h2>
+        <p>Un socle d’ingénierie et de data au service des RH.</p>
+      </div>
+
+      <div class="timeline timeline--simple">
+        <article class="timeline__item">
+          <div class="timeline__marker"></div>
+          <div class="timeline__content">
+            <h3>Mastère Manager des Ressources Humaines</h3>
+            <p class="timeline__meta">2026 – 2027 – Collège de Paris Développement</p>
             <p>
-              Analyse et suivi d’indicateurs · Tableaux de bord RH · Gestion de
-              projet · Confidentialité & éthique des données.
+              Alternance – développement RH, relations sociales, gestion du
+              personnel, accompagnement du changement.
             </p>
           </div>
-          <div class="skill-group">
-            <h4>Communication & collaboration</h4>
+        </article>
+
+        <article class="timeline__item">
+          <div class="timeline__marker"></div>
+          <div class="timeline__content">
+            <h3>Master 2 – Machine Learning for Data Science</h3>
+            <p class="timeline__meta">2024 – 2025 – Université Paris Cité</p>
             <p>
-              Présentations à des publics non techniques · Animation
-              d’associations et d’équipes étudiantes · Rédaction de supports
-              clairs & synthétiques.
+              IA et analyse avancée de données, avec applications possibles au
+              pilotage d’indicateurs RH et à la people analytics.
             </p>
           </div>
-          <div class="skill-group">
-            <h4>Data & outils</h4>
+        </article>
+
+        <article class="timeline__item">
+          <div class="timeline__marker"></div>
+          <div class="timeline__content">
+            <h3>Diplôme d’État d’Ingénieur en Data Science</h3>
+            <p class="timeline__meta">2019 – 2024 – INSEA, Rabat</p>
             <p>
-              Statistiques descriptives · SQL · Tableaux de bord · Outils
-              collaboratifs (Notion, suite Office, etc.).
+              Statistique, data, gestion de projets, travail avec des équipes
+              métiers.
             </p>
           </div>
-          <div class="skill-group">
-            <h4>Langues</h4>
-            <p>Français (C1) · Anglais (C1) · Espagnol (B1)</p>
+        </article>
+
+        <article class="timeline__item">
+          <div class="timeline__marker"></div>
+          <div class="timeline__content">
+            <h3>Classes Préparatoires – Physique & Sciences de l’Ingénieur</h3>
+            <p class="timeline__meta">2017 – 2019 – Lycée Mohamed VI, Kénitra</p>
           </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJETS RH & DATA -->
+    <section class="section" id="projets">
+      <div class="section__header">
+        <h2>Projets RH & Data</h2>
+        <p>Illustrations de ce que je peux apporter à une équipe RH.</p>
+      </div>
+
+      <div class="grid grid--two">
+        <article class="card">
+          <h3>Tableaux de bord RH & KPI</h3>
+          <p>
+            À partir d’exports SIRH (absentéisme, turnover, recrutement,
+            formation), je peux construire des tableaux de bord clairs pour les
+            équipes RH et les managers :
+          </p>
+          <ul class="list">
+            <li>Définition et harmonisation des KPI.</li>
+            <li>Construction de vues synthétiques par service ou population.</li>
+            <li>Mise en forme pour faciliter la prise de décision.</li>
+            <li>Documentation des indicateurs pour assurer leur pérennité.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Amélioration d’un processus RH</h3>
+          <p>
+            En m’appuyant sur les données et les retours des équipes, je peux
+            contribuer à l’optimisation de processus RH :
+          </p>
+          <ul class="list">
+            <li>Cartographie du processus existant (ex. suivi du temps, onboarding).</li>
+            <li>Identification des irritants et points de friction.</li>
+            <li>Proposition d’ajustements simples et mesurables.</li>
+            <li>Suivi d’indicateurs avant / après pour objectiver l’impact.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section--alt" id="contact">
+      <div class="section__header">
+        <h2>Contact</h2>
+        <p>Discutons de vos besoins en Ressources Humaines.</p>
+      </div>
+
+      <div class="contact">
+        <div class="contact__info">
+          <p>
+            Je suis ouvert aux opportunités en alternance dans des services RH
+            généralistes ou spécialisés (développement RH, recrutement, GPEC,
+            formation, QVT, people analytics), en France et en Outre-Mer.
+          </p>
+          <ul class="list">
+            <li>📧 <a href="mailto:maelmoussaoui1@gmail.com">maelmoussaoui1@gmail.com</a></li>
+            <li>📞 <a href="tel:+33973038150">+33 9 73 03 81 50</a></li>
+            <li>📍 Paris – Mobilité France entière & Outre-Mer</li>
+            <li>📅 Disponible à partir de janvier 2026</li>
+          </ul>
         </div>
-      </section>
 
-      <!-- Projets / Portfolio -->
-      <section id="portfolio" class="section">
-        <h2 class="section__title">Projets</h2>
-
-        <div class="portfolio-filters">
-          <button class="filter-btn filter-btn--active" data-filter="all">
-            Tous
-          </button>
-          <button class="filter-btn" data-filter="analytics">
-            People analytics
-          </button>
-          <button class="filter-btn" data-filter="rh">
-            Projets transposables RH
-          </button>
-          <button class="filter-btn" data-filter="assoc">
-            Associatif
-          </button>
-        </div>
-
-        <div class="portfolio-grid">
-          <article class="project-card" data-category="analytics">
-            <h3 class="project-card__title">
-              Suivi temps réel du “sentiment” sur les réseaux sociaux
-            </h3>
-            <p class="project-card__tag">People / Social Analytics</p>
-            <p class="project-card__text">
-              Mise en place d’un pipeline temps réel de suivi de l’opinion en
-              ligne, avec tableau de bord. Transposable à un baromètre social
-              interne ou au suivi de la marque employeur.
-            </p>
-          </article>
-
-          <article class="project-card" data-category="rh">
-            <h3 class="project-card__title">
-              Tableaux de bord de performance – OCTO Technology
-            </h3>
-            <p class="project-card__tag">Indicateurs & pilotage</p>
-            <p class="project-card__text">
-              Construction de tableaux de bord pour suivre la performance d’un
-              système de recommandation. Méthodologie réutilisable pour des
-              indicateurs RH (recrutement, formation, mobilité…).
-            </p>
-          </article>
-
-          <article class="project-card" data-category="rh">
-            <h3 class="project-card__title">
-              Indicateurs de qualité des données – Ziwig
-            </h3>
-            <p class="project-card__tag">Qualité & conformité</p>
-            <p class="project-card__text">
-              Mise en place d’indicateurs de qualité de données dans un contexte
-              clinique réglementé. Approche transférable à la fiabilisation des
-              données RH.
-            </p>
-          </article>
-
-          <article class="project-card" data-category="analytics">
-            <h3 class="project-card__title">
-              Suivi du risque et de la fraude – SOFAC
-            </h3>
-            <p class="project-card__tag">Reporting & KPI</p>
-            <p class="project-card__text">
-              Création de tableaux de bord pour le risque et la fraude,
-              illustration de la capacité à construire des indicateurs utiles
-              aux métiers.
-            </p>
-          </article>
-
-          <article class="project-card" data-category="assoc">
-            <h3 class="project-card__title">
-              Organisation d’événements étudiants
-            </h3>
-            <p class="project-card__tag">Gestion de projet & logistique</p>
-            <p class="project-card__text">
-              Coordination d’événements rassemblant plusieurs centaines de
-              participants : gestion d’équipe, partenaires, budget, planning.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <!-- Engagements & associatif -->
-      <section id="engagements" class="section">
-        <h2 class="section__title">Engagements & associatif</h2>
-        <ul class="list">
-          <li class="list__item">
-            <strong>Président – INSEA Innovation Edge</strong> :
-            organisation d’événements technologiques nationaux, gestion
-            d’équipe, partenariats avec des entreprises.
-          </li>
-          <li class="list__item">
-            <strong>Responsable logistique – Forum GENI-Entreprise</strong> :
-            coordination d’un événement réunissant étudiants et entreprises,
-            suivi des équipes et du planning.
-          </li>
-          <li class="list__item">
-            <strong>Membre d’associations scientifiques</strong> :
-            participation à la promotion des mathématiques et des sciences auprès
-            d’un public large.
-          </li>
-        </ul>
-      </section>
-
-      <!-- Contact -->
-      <section id="contact" class="section">
-        <h2 class="section__title">Contact</h2>
-        <p>
-          Vous recherchez un(e) alternant(e) en Ressources Humaines à partir de
-          janvier 2026 (rythme 4 jours en entreprise / 1 jour à l’école) ?
-          N’hésitez pas à me contacter pour échanger sur vos besoins et voir
-          comment je peux y contribuer.
-        </p>
-
-        <!-- IMPORTANT : remplace l'URL Formspree par celle fournie dans ton compte -->
         <form
-          class="contact-form"
-          action="https://formspree.io/f/your-form-id"
-          method="POST"
+          class="contact__form"
+          action="mailto:maelmoussaoui1@gmail.com"
+          method="post"
+          enctype="text/plain"
         >
-          <div class="form-row">
-            <div class="form-group">
-              <label for="name">Nom</label>
-              <input
-                id="name"
-                name="name"
-                type="text"
-                required
-                placeholder="Votre nom"
-              />
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                required
-                placeholder="vous@example.com"
-              />
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label for="message">Message</label>
+          <label>
+            Nom
+            <input type="text" name="nom" placeholder="Votre nom" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="Votre email" required />
+          </label>
+          <label>
+            Message
             <textarea
-              id="message"
               name="message"
               rows="4"
+              placeholder="Votre message..."
               required
-              placeholder="Écrivez votre message ici..."
             ></textarea>
-          </div>
-
+          </label>
           <button type="submit" class="btn btn--primary">
-            Envoyer
+            Envoyer le message
           </button>
         </form>
-      </section>
-    </main>
-  </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> – Amine EL MOUSSAOUI – Alternant en Ressources Humaines</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
