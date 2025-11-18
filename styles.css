@@ -84,7 +84,7 @@ body {
 
 .navbar__links a:hover {
   color: var(--text);
-  background-color: rgba(148, 163, 184, 0.16);
+  background-color: rgba(209, 213, 219, 0.35);
 }
 
 /* Mobile menu button */
@@ -113,6 +113,13 @@ body {
   padding: 3.5rem 1.5rem 3.75rem;
 }
 
+.hero__wrapper {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1.2fr);
+  gap: 2.5rem;
+  align-items: center;
+}
+
 .hero__content {
   max-width: 720px;
 }
@@ -124,7 +131,7 @@ body {
   padding: 0.3rem 0.75rem;
   border-radius: 999px;
   border: 1px solid rgba(249, 115, 22, 0.4);
-  background-color: rgba(15, 23, 42, 0.9);
+  background-color: #ffffff;
   color: var(--accent);
   font-size: 0.8rem;
   text-transform: uppercase;
@@ -159,12 +166,7 @@ body {
   gap: 0.75rem;
 }
 
-.hero__wrapper {
-  display: grid;
-  grid-template-columns: minmax(0, 2fr) minmax(0, 1.2fr);
-  gap: 2.5rem;
-  align-items: center;
-}
+/* Photo */
 
 .hero__photo {
   display: flex;
@@ -176,19 +178,8 @@ body {
   height: 230px;
   border-radius: 999px;
   object-fit: cover;
-  border: 3px solid rgba(249, 115, 22, 0.4);
-  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.2);
-}
-
-/* Sur mobile, photo en dessous du texte */
-@media (max-width: 720px) {
-  .hero__wrapper {
-    grid-template-columns: minmax(0, 1fr);
-  }
-
-  .hero__photo {
-    margin-top: 1.5rem;
-  }
+  border: 3px solid rgba(249, 115, 22, 0.6);
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.15);
 }
 
 /* BUTTONS */
@@ -209,7 +200,7 @@ body {
 
 .btn--primary {
   background: linear-gradient(135deg, #fb923c, #f97316);
-  color: #0b1120;
+  color: #ffffff;
   box-shadow: 0 14px 35px rgba(249, 115, 22, 0.35);
 }
 
@@ -219,8 +210,8 @@ body {
 }
 
 .btn--secondary {
-  background: transparent;
-  border-color: rgba(148, 163, 184, 0.4);
+  background: #ffffff;
+  border-color: rgba(209, 213, 219, 0.9);
   color: var(--text);
 }
 
@@ -282,7 +273,8 @@ body {
 }
 
 .card--highlight {
-  background: radial-gradient(circle at top left, #0b1120 0, #020617 70%);
+  background: linear-gradient(135deg, #ffffff 0, #f9fafb 60%);
+  border: 1px solid rgba(249, 115, 22, 0.25);
 }
 
 /* TIMELINE */
@@ -290,7 +282,7 @@ body {
 .timeline {
   position: relative;
   padding-left: 1.5rem;
-  border-left: 1px dashed rgba(148, 163, 184, 0.5);
+  border-left: 1px dashed rgba(209, 213, 219, 0.9);
   display: grid;
   gap: 1.75rem;
 }
@@ -372,7 +364,7 @@ body {
   font-size: 0.78rem;
   padding: 0.25rem 0.7rem;
   border-radius: 999px;
-  border: 1px solid rgba(148, 163, 184, 0.6);
+  border: 1px solid rgba(209, 213, 219, 0.9);
   color: var(--muted);
 }
 
@@ -410,12 +402,17 @@ body {
 .contact__form input,
 .contact__form textarea {
   border-radius: var(--radius-sm);
-  border: 1px solid rgba(148, 163, 184, 0.3);
-  background: #020617;
+  border: 1px solid rgba(209, 213, 219, 0.9);
+  background: #ffffff;        /* ← plus de fond sombre ici */
   color: var(--text);
   padding: 0.55rem 0.6rem;
   font-family: inherit;
   font-size: 0.9rem;
+}
+
+.contact__form input::placeholder,
+.contact__form textarea::placeholder {
+  color: #9ca3af;
 }
 
 .contact__form input:focus,
@@ -428,7 +425,7 @@ body {
 /* FOOTER */
 
 .site-footer {
-  border-top: 1px solid rgba(148, 163, 184, 0.3);
+  border-top: 1px solid rgba(209, 213, 219, 0.9);
   padding: 1.4rem 1.5rem 1.8rem;
   text-align: center;
   font-size: 0.78rem;
@@ -442,7 +439,8 @@ body {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .grid--two {
+  .grid--two,
+  .hero__wrapper {
     grid-template-columns: minmax(0, 1fr);
   }
 
@@ -467,15 +465,15 @@ body {
     position: absolute;
     top: 60px;
     right: 1.5rem;
-    background: #020617;
+    background: #ffffff;
     border-radius: 1rem;
-    border: 1px solid rgba(148, 163, 184, 0.3);
+    border: 1px solid rgba(209, 213, 219, 0.9);
     padding: 0.75rem;
     flex-direction: column;
     gap: 0.4rem;
     min-width: 190px;
     display: none;
-    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.85);
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.15);
     z-index: 20;
   }
 
@@ -487,7 +485,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 30;
-    background: #020617f5;
+    background: #ffffffee;
     backdrop-filter: blur(12px);
   }
 
@@ -505,5 +503,9 @@ body {
 
   .grid--three {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hero__photo {
+    margin-top: 1.5rem;
   }
 }
