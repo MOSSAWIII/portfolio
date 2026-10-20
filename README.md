@@ -1,19 +1,25 @@
 # Personal portfolio
 
-A concise public portfolio for Mohamed Amine EL MOUSSAOUI, showcasing work in finance, applied machine learning and data engineering.
+This repository contains the static website for Mohamed Amine EL MOUSSAOUI, focused on **financial analysis, applied machine learning, data engineering and reproducible research**.
 
-The page is implemented as static HTML/CSS/JavaScript. It highlights a selection of public projects, with links to their repositories and explicit boundaries on research claims.
+The site is intentionally minimal: [HTML](index.html), [CSS](styles.css) and [JavaScript](script.js), without a build process or backend.
 
+## Current public profile
+
+The GitHub profile introduction is **already published** at [MOSSAWIII/MOSSAWIII](https://github.com/MOSSAWIII/MOSSAWIII). The file [`PROFILE_README.md`](PROFILE_README.md) in this repository was the original draft and is not the live profile source of truth.
+
+- [Live profile README](https://github.com/MOSSAWIII/MOSSAWIII/blob/main/README.md)
 - [Website source](index.html)
-- [GitHub profile README draft](PROFILE_README.md) — **not** published as the profile homepage; GitHub requires a public `MOSSAWIII/MOSSAWIII` repository whose root file is `README.md`.
-- [Suggested pinned repositories and cleanup queue](PROFILE_PROJECTS.md)
+- [Repository selection and cleanup notes](PROFILE_PROJECTS.md)
 
-## Local preview
+## Preview
 
-Open `index.html` in a browser or serve this directory using a static file server (for example, `python -m http.server 8000`). No build step, account token or backend is required.
+Open `index.html` locally, or serve this repository with `python -m http.server 8000`. No credentials or backend are required.
 
-## Publication notes
+GitHub Pages support is configured on the repository, but the publishing source and externally accessible URL should be checked in **Settings → Pages** before describing the website as deployed.
 
-The repository has GitHub Pages support. Check the repository's Pages source and published URL before claiming the current branch is live. This documentation refresh alone does not verify a deployed site or automatically adjust profile settings.
+## Legacy material
 
-Older unused site assets may still be present in the repository. They should be reviewed for privacy and ownership before removal. 
+The repository still contains an older HR-oriented PDF CV and an unused photo. They are not referenced by the new site. Review their provenance and privacy implications before deciding whether to remove them; deleting tracked files does not remove their historical commits.
+
+*The projects linked from the website describe research or demonstration work; this is not a claim of independent production deployment.*
