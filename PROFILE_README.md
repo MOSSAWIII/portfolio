@@ -1,29 +1,33 @@
+<!-- Synchronized convenience copy. Canonical GitHub profile README: https://github.com/MOSSAWIII/MOSSAWIII/blob/main/README.md -->
+
 # Mohamed Amine EL MOUSSAOUI
 
 **Finance · Applied Machine Learning · Data Engineering**
 
-I work at the intersection of financial analysis, machine learning, and data engineering. My interests include reliable financial risk forecasting, reproducible research, and practical decision-support systems.
+I work on problems where financial judgment, reliable data and machine learning meet. My focus is on **financial analysis**, **reproducible research** and **systems that support real decisions**.
 
-Currently working in financial analysis and strategy at **Attijariwafa bank**. Previously a **Data Consultant at OCTO Technology (Accenture)**. Trained in Data Science at **INSEA Rabat** and **Université Paris Cité**.
+I am a **Finance Business Partner at Attijariwafa bank**, working on financial performance, strategic analysis and decision support. Previously, I worked as a **Data Consultant at OCTO Technology (Accenture)**.
 
-### Selected projects
+## Selected work
 
-| Project | Focus |
-| --- | --- |
-| [AI Financial Risk Reliability](https://github.com/MOSSAWIII/ai-financial-risk-reliability) | Research in progress: forecasting, conditional reliability, uncertainty and sequential financial decisions. |
-| [Morocco Electoral Data Warehouse](https://github.com/MOSSAWIII/morocco-electoral-data-warehouse) | Reproducible electoral and parliamentary data, quality checks, provenance and DuckDB analytics. |
-| [Real-Time Recommendation Engine](https://github.com/MOSSAWIII/realtime-recommendation-engine) | Event-driven recommendations with Scala, RabbitMQ, PostgreSQL, and automated tests. |
-| [Real-Time Election Data Engineering](https://github.com/MOSSAWIII/realtime-voting-data-engineering) | Demonstration pipeline using Kafka, Spark, PostgreSQL and Streamlit. |
+| Project | What you will find |
+| :--- | :--- |
+| **[Financial Risk Forecast Reliability](https://github.com/MOSSAWIII/ai-financial-risk-reliability)** | Ongoing research on realized volatility, forecast errors, conditional reliability and uncertainty under changing market conditions. [English overview](https://github.com/MOSSAWIII/ai-financial-risk-reliability/blob/main/docs/OVERVIEW_EN.md). |
+| **[Morocco Electoral Data Warehouse](https://github.com/MOSSAWIII/morocco-electoral-data-warehouse)** | Reproducible Moroccan electoral and parliamentary data, with provenance, validation, documented gaps and DuckDB analysis. [English overview](https://github.com/MOSSAWIII/morocco-electoral-data-warehouse/blob/main/docs/OVERVIEW_EN.md). |
+| **[Real-Time Recommendation Engine](https://github.com/MOSSAWIII/realtime-recommendation-engine)** | Scala, RabbitMQ and PostgreSQL architecture for event-driven recommendations, with documented components and tests. |
+| **[Election Streaming Pipeline](https://github.com/MOSSAWIII/realtime-voting-data-engineering)** | Educational Kafka / Spark / PostgreSQL / Streamlit pipeline using generated voting events; not an official election-results feed. |
 
-### What I work on
+## Background
 
-**Financial research and analytics:** market risk, model evaluation, financial statements, scenario analysis.  
-**ML and data science:** predictive modeling, NLP, explainability, robust evaluation.  
-**Engineering:** Python, Scala, SQL, event-driven systems, containerized workflows and data quality.
+- **Finance:** balance-sheet and P&L analysis, profitability, benchmarks, reporting and economic context.
+- **Machine learning:** predictive modeling, NLP, model evaluation and risk-related uncertainty.
+- **Data engineering:** Python, Scala, SQL, streaming systems, reproducible analytics and containerized tools.
+- **Education:** State Engineering degree in Data Science (**INSEA Rabat**) and a Master's in Machine Learning for Data Science (**Université Paris Cité**).
 
-I value transparent assumptions, honest reporting of limitations, and evidence that can be independently checked.
+## How I approach projects
 
-[Explore my repositories](https://github.com/MOSSAWIII?tab=repositories)
+I prefer clear questions, explicit assumptions, verifiable evidence and documented limits over ambitious claims without supporting results. Research prototypes, engineering demonstrations and production systems should not be confused.
 
----
-*Project status and documented results are maintained in each repository. Nothing here is a claim of production deployment or investment performance.*
+**Explore:** [Public repositories](https://github.com/MOSSAWIII?tab=repositories) · [Portfolio source](https://github.com/MOSSAWIII/portfolio)
+
+*Research work is in progress. No investment returns, production deployments or scientific conclusions are implied by a project listing.*
